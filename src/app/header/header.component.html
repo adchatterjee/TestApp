@@ -1,0 +1,59 @@
+<div class="store-header-main-wrapper">
+    <div>
+        <div class="md-sbg md-pb15">
+            <div class="dfr store store-location-header md-pbg md-sbg md-cffffff md-pl15 md-pr15 md-pt10 md-pb14 md-text12 md-f500 banners">
+                <div class="logo-wrap"><img src="https://cdn.dotpe.in/logo/504/mcd1.jpg" alt=""></div>
+                <div class="store-detail"><span class="md-ml5 md-mr10 md-text14 md-f700 store-name">McDonalds</span><span class="md-ml5 dfr md-mr10 md-f400 store-name-loc"><span>McDonalds WB Durgapur Junction Mall</span></span>
+                </div>
+                <div class="menu-type-main-container" (click)="showpopup();">
+                    <div class="menu-type-chip-container ">
+                        <div class="menu-option dfr md-text12 md-f500"><span>Dine In</span><i class="fa fa-angle-down md-pl8"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header header-search md-p16 "><span><img src="//cdn.dotpe.in/cfe/image/search-grey.png" alt="">Search for items…</span></div>
+            <div></div>
+            <div class="banner-wrapper ">
+                <div class="banner-img-container ">
+                    <div class="banner-img "><img src="//cdn.dotpe.in/reports/store/4614/promo-banner/2HFH91ANBPBFG8NTPI" alt="0promoBanner"></div>
+                    <div class="banner-img "><img src="//cdn.dotpe.in/reports/store/4614/promo-banner/2HFH91I7CCPECF4RPN" alt="1promoBanner"></div>
+                    <div class="banner-img "><img src="//cdn.dotpe.in/promoBanner/504/011121_HappyMealBanner_620x330_vo1.jpg" alt="2promoBanner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-block-wrap banners" style="background-image: url(&quot;null&quot;);">
+        <div class="promotion-offer-banner dfr justify-content-between ">
+            <div class="more-promo-text dfr flex-column align-items-start">
+                <div class="get-free-text md-text18 md-f700">Exciting offers available</div>
+                <div class="dotpe-offer-text"><span class="flat-text">40% off up to Rs 150 using Slice</span></div>
+                <div class="view-all-offers md-text12 md-f700">VIEW OFFERS<img src="//cdn.dotpe.in/cfe/image/img-arrow-banner-forward.svg"></div>
+            </div>
+            <div class="promo-banner-img-wrapper">
+                <div class="payment-promo-wrapper dfr">
+                    <div class="payment-img-wrapper"><img src="//cdn.dotpe.in/cfe/image/mobikwik.png" alt=""></div>
+                    <div class="payment-img-wrapper"><img src="//cdn.dotpe.in/cfe/image/sliceOffer.png" alt=""></div>
+                    <div class="promo-count md-text12">+8</div>
+                </div><img class="image-banner" src="//cdn.dotpe.in/cfe/image/img-banner-gift-1.png"></div>
+        </div>
+        <div class="offers-container">
+            <div class="referral-banner-main-container "></div>
+        </div>
+        <div class="ReactModalPortal" [style.display]="isShow" id="openpopup">
+            <div class="ReactModal__Overlay ReactModal__Overlay--after-open" style="position: fixed; inset: 0px; background-color: rgba(255, 255, 255, 0.75);">
+                <div class="ReactModal__Content ReactModal__Content--after-open menu-type-toggle-modal undefined" tabindex="-1" role="dialog">
+                    <div class="menu-type-toggle-wrap">
+                        <div class="options-container dfr">
+                            <div class="option-type active primary-cta md-f700" (click)="ClickedOut($event)">
+                                <span class="md-text16 text md-c000000">Dine In</span>
+                            </div>
+                            <div class="option-type">
+                                <span class="md-text16 text md-c000000" (click)="ClickedOut($event)">Takeaway</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
